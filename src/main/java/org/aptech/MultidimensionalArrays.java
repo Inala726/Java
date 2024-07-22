@@ -75,9 +75,5 @@ public  class MultidimensionalArrays {
         System.out.println("}");
     }
 
-    public static void printTriangle(){
-        for (int i = 1; i < 5; i++) {
-            System.out.println(" ");
-        }
-    }
+
 }
