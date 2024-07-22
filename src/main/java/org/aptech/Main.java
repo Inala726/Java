@@ -1,14 +1,14 @@
 package org.aptech;
 
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
-//import java.nio.channels.MulticastChannel;
+import java.nio.channels.MulticastChannel;
 
 public class Main {
     public static void main(String[] args) {
-//        System.out.printf("Hello world");
-        Computation comp = new Computation();
+//        System.out.print("Hello world");
+//        Computation comp = new Computation();
 //        System.out.println( "k = " +comp.findK(6));
 //        comp.divideTwo(6,3);
 //        var input = new Scanner(System.in);
@@ -30,33 +30,43 @@ public class Main {
 //        System.out.println(MultidimensionalArrays.reverseArr(data));
 
 
-        int[][] A = {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        };
+        MultidimensionalArrays.printResult();
 
-        int[][] B = {
-                {9, 8, 7},
-                {6, 5, 4},
-                {3, 2, 1}
-        };
-        int[][] result = new int[A.length][A[0].length];
 
-        System.out.println("Addition: ");
-        MultidimensionalArrays.addMatrix(A,B,result);
-        printMatrix(result);
 
+
+
+
+//        int[][] A = {
+//                {1, 2, 3},
+//                {4, 5, 6},
+//                {7, 8, 9}
+//        };
+//
+//        int[][] B = {
+//                {9, 8, 7},
+//                {6, 5, 4},
+//                {3, 2, 1}
+//        };
+//        int[][] result = new int[A.length][A[0].length];
+//
+//        System.out.println("Addition: ");
+//        MultidimensionalArrays.multiplyMatrix(A,B,result);
+//        printMatrix(result);
 
     }
 
-    public static void printMatrix(int[][] matrix) {
-        for (int[] row : matrix) {
-            for (int val : row) {
-                System.out.print(val + " ");
-            }
-            System.out.println();
-        }
-    }
+
+//    public static void printMatrix(int[][] matrix) {
+//        for (int[] row : matrix) {
+//            for (int val : row) {
+//                System.out.print(val + " ");
+//            }
+//            System.out.println();
+//        }
+//    }
+
+
+
 
 }
