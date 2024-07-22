@@ -1,10 +1,6 @@
 package org.aptech;
 
 
-import java.util.Scanner;
-
-import java.nio.channels.MulticastChannel;
-
 public class Main {
     public static void main(String[] args) {
 //        System.out.print("Hello world");
@@ -29,13 +25,46 @@ public class Main {
 //        int[] data = {1,2,3,4,5,6,7};
 //        System.out.println(MultidimensionalArrays.reverseArr(data));
 
+        // ********************Triangle shii************************
 
-        MultidimensionalArrays.printResult();
-
-
-
+        int rows = 5;
 
 
+        char[][] triangle = new char[rows][2 * rows - 1];
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < 2 * rows - 1; j++) {
+                triangle[i][j] = ' ';
+            }
+        }
+
+        for (int i = 0; i < rows; i++) {
+            int start = rows - 1 - i;
+            int end = rows - 1 + i;
+            for (int j = start; j <= end; j++) {
+                triangle[i][j] = '*';
+            }
+        }
+
+        printTriangle(triangle);
+    }
+
+    public static void printTriangle(char[][] triangle) {
+        for (char[] row : triangle) {
+            for (char c : row) {
+                System.out.print(c);
+            }
+            System.out.println();
+        }
+    }
+
+    //Results****************************
+//        MultidimensionalArrays.printResult();
+
+
+
+
+// ******************************Matrices************************************
 
 //        int[][] A = {
 //                {1, 2, 3},
@@ -66,7 +95,5 @@ public class Main {
 //        }
 //    }
 
+//****************Matrix end************************
 
-
-
-}
