@@ -1,20 +1,42 @@
 package org.aptech;
 
 
+import org.aptech.OOP.Arithmetic;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 //        System.out.print("Hello world");
 //        Computation comp = new Computation();
 //        System.out.println( "k = " +comp.findK(6));
 //        comp.divideTwo(6,3);
-//        var input = new Scanner(System.in);
+        var input = new Scanner(System.in);
+        Arithmetic arith = new Arithmetic();
 //        System.out.println("Enter the first mass: ");
 //        double m1 = input.nextDouble();
 //        System.out.println("Enter the second mass: ");
 //        double m2 = input.nextDouble();
 //        System.out.println("Enter the radius: ");
 //        double r = input.nextDouble();
-//
+
+
+        System.out.println("Enter the value of P: ");
+        double P = input.nextDouble();
+        System.out.println("Enter the value of r: ");
+        double r = input.nextDouble();
+        System.out.println("Enter the value of n: ");
+        double n = input.nextDouble();
+        System.out.println(arith.monthlyInterest(P, r, n));
+
+
+
+
+
+
+
+
+
 //        comp.gravityTS(r,m1,m2);
 //        for (int num : numbers){
 //        }
@@ -27,36 +49,39 @@ public class Main {
 
         // ******************** Triangle shii ************************
 
-        int rows = 5;
+//        int rows = 5;
+//
+//
+//        char[][] triangle = new char[rows][2 * rows - 1];
+//
+//        for (int i = 0; i < rows; i++) {
+//            for (int j = 0; j < 2 * rows - 1; j++) {
+//                triangle[i][j] = ' ';
+//            }
+//        }
+//
+//        for (int i = 0; i < rows; i++) {
+//            int start = rows - 1 - i;
+//            int end = rows - 1 + i;
+//            for (int j = start; j <= end; j++) {
+//                triangle[i][j] = '*';
+//            }
+//        }
 
-
-        char[][] triangle = new char[rows][2 * rows - 1];
-
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < 2 * rows - 1; j++) {
-                triangle[i][j] = ' ';
-            }
-        }
-
-        for (int i = 0; i < rows; i++) {
-            int start = rows - 1 - i;
-            int end = rows - 1 + i;
-            for (int j = start; j <= end; j++) {
-                triangle[i][j] = '*';
-            }
-        }
-
-        printTriangle(triangle);
+//        printTriangle(triangle);
     }
 
-    public static void printTriangle(char[][] triangle) {
-        for (char[] row : triangle) {
-            for (char c : row) {
-                System.out.print(c);
-            }
-            System.out.println();
-        }
-    }
+//    public static void printTriangle(char[][] triangle) {
+//        for (char[] row : triangle) {
+//            for (char c : row) {
+//                System.out.print(c);
+//            }
+//            System.out.println();
+//        }
+//    }
+
+
+
 
     //Results****************************
 //        MultidimensionalArrays.printResult();
@@ -88,4 +113,3 @@ public class Main {
 //    }
 
 //****************Matrix end************************
-
